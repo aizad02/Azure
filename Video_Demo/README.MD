@@ -5,7 +5,7 @@ Video Demo for Azure 104 Training [ Not completed ] but will show you the lab de
 ## Lab Recordings and Demos
 
 This repo contains links to videos of labs demos used in Microsoft Official Curriculum.
-The intent is to provide Microsoft Certified Trainers an easy way to access a non-audio version recording of hands-on labs used in the portfolio.
+
 
 List of modules and labs currently recorded:
 
