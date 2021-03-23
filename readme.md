@@ -1,5 +1,10 @@
 # AZ-104: Microsoft Azure Administrator
 
+> **There is a [Lab Recordings and Demos](https://github.com/MicrosoftLearning/Lab-Demo-Recordings) repo with links to videos of labs used in Microsoft Official Curriculum. The intent is to provide Microsoft Certified Trainers an easy way to access a non-audio version recording of hands-on labs used in the portfolio.**
+
+- **[Link to labs (HTML format)](https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/)**
+- **Are you a MCT?** - Have a look at our [GitHub User Guide for MCTs](https://microsoftlearning.github.io/MCT-User-Guide/)
+
 ## What are we doing?
 
 - To support this course, we will need to make frequent updates to the course content to keep it current with the Azure services used in the course.  We are publishing the lab instructions and lab files on GitHub to allow for open contributions between the course authors and MCTs to keep the content current with changes in the Azure platform.
