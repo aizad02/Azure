@@ -22,6 +22,10 @@ In this lab, you will:
 
 ## Estimated timing: 40 minutes
 
+## Architecture diagram
+
+![image](../media/lab09c.png)
+
 ## Instructions
 
 ### Exercise 1
@@ -62,6 +66,7 @@ In this task, you will deploy an Azure Kubernetes Services cluster by using the 
     | Resource group | the name of a new resource group **az104-09c-rg1** |
     | Kubernetes cluster name | **az104-9c-aks1** |
     | Region | the name of a region where you can provision a Kubernetes cluster |
+    | Availability zones | **None** (uncheck all boxes) |
     | Kubernetes version | accept the default |
     | Node size | accept the default |
     | Node count | **1** |

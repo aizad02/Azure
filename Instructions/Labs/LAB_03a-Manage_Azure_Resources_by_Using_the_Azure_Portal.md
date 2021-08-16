@@ -21,6 +21,10 @@ In this lab, we will:
 
 ## Estimated timing: 20 minutes
 
+## Architecture diagram
+
+![image](../media/lab03a.png)
+
 ## Instructions
 
 ### Exercise 1
@@ -31,7 +35,7 @@ In this task, you will use the Azure portal to create resource groups and create
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
-1. In the Azure portal, search for and select **Disks**, click **+ Add**, and specify the following settings:
+1. In the Azure portal, search for and select **Disks**, click **+ Add, + Create, or + New**, and specify the following settings:
 
     |Setting|Value|
     |---|---|
@@ -62,9 +66,7 @@ In this task, we will move the disk resource you created in the previous task to
 
     >**Note**: This method allows you to move multiple resources at the same time. 
 
-1. On the **Move resources** blade, click **Create a new group**.
-
-1. Below the **Resource group** text box, click **Create a new group** then type **az104-03a-rg2** in the text box, select the checkbox **I understand that tools and scripts associated with moved resources will not work until I update them to use new resource IDs**, and click **OK**.
+1. Below the **Resource group** text box, click **Create new** then type **az104-03a-rg2** in the text box. On the Review tab, select the checkbox **I understand that tools and scripts associated with moved resources will not work until I update them to use new resource IDs**, and click **Move**.
 
     >**Note**: Do not wait for the move to complete but instead proceed to the next task. The move might take about 10 minutes. You can determine that the operation was completed by monitoring activity log entries of the source or target resource group. Revisit this step once you complete the next task.
 
@@ -72,7 +74,7 @@ In this task, we will move the disk resource you created in the previous task to
 
 In this task, you will apply a resource lock to an Azure resource group containing a disk resource.
 
-1. In the Azure portal, search for and select **Disks**, click **+ Add**, and specify the following settings:
+1. In the Azure portal, search for and select **Disks**, click **+ Add, + Create, or + New**, and specify the following settings:
 
     |Setting|Value|
     |---|---|

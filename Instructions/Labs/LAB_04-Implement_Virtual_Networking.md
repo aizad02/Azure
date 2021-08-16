@@ -25,6 +25,10 @@ In this lab, you will:
 
 ## Estimated timing: 40 minutes
 
+## Architecture diagram
+
+![image](../media/lab04.png)
+
 ## Instructions
 
 ### Exercise 1
@@ -127,8 +131,6 @@ In this task, you will configure static assignment of public and private IP addr
 
 1. In the list IP configurations, click **ipconfig1**.
 
-1. On the **ipconfig1** blade, set **Assignment** to **Static**, leave the default value of **IP address** set to **10.40.0.4**.
-
 1. On the **ipconfig1** blade, in the **Public IP address settings** section, select **Associate**, click **+ Create new**, specify the following settings, and click **OK**:
 
     | Setting | Value |
@@ -136,7 +138,9 @@ In this task, you will configure static assignment of public and private IP addr
     | Name | **az104-04-pip0** |
     | SKU | **Standard** |
 
-1. Back on the **ipconfig1** blade, save the changes.
+1. On the **ipconfig1** blade, set **Assignment** to **Static**, leave the default value of **IP address** set to **10.40.0.4**.
+
+1. Back on the **ipconfig1** blade, save the changes. Make sure to wait for the save operation to complete before you proceed to the next step.
 
 1. Navigate back to the **az104-04-vnet1** blade
 
@@ -146,14 +150,14 @@ In this task, you will configure static assignment of public and private IP addr
 
 1. In the list IP configurations, click **ipconfig1**.
 
-1. On the **ipconfig1** blade, set **Assignment** to **Static**, leave the default value of **IP address** set to **10.40.1.4**.
-
 1. On the **ipconfig1** blade, in the **Public IP address settings** section, select **Associate**, click **+ Create new**, specify the following settings, and click **OK**:
 
     | Setting | Value |
     | --- | --- |
     | Name | **az104-04-pip1** |
     | SKU | **Standard** |
+
+1. On the **ipconfig1** blade, set **Assignment** to **Static**, leave the default value of **IP address** set to **10.40.1.4**.
 
 1. Back on the **ipconfig1** blade, save the changes.
 
@@ -269,9 +273,10 @@ In this task, you will configure DNS name resolution within a virtual network by
 
 1. Switch to the Remote Desktop session to **az104-04-vm0**, right-click the **Start** button and, in the right-click menu, click **Windows PowerShell (Admin)**.
 
-1. In the Windows PowerShell console window, run the following to test internal name resolution of the **az104-04-vm1** DNS record set in the newly created private DNS zone:
+1. In the Windows PowerShell console window, run the following to test internal name resolution in the newly created private DNS zone:
 
    ```powershell
+   nslookup az104-04-vm0.contoso.org
    nslookup az104-04-vm1.contoso.org
    ```
 
@@ -281,7 +286,7 @@ In this task, you will configure DNS name resolution within a virtual network by
 
 In this task, you will configure external DNS name resolution by using Azure public DNS zones.
 
-1. In the web browser, open a new tab and navigate to <https://www.godaddy.com/domains/domain-name-search>.
+1. In the web browser on the **SEA-DEV** lab system, open a new tab and navigate to <https://www.godaddy.com/domains/domain-name-search>.
 
 1. Use the domain name search to identify a domain name which is not in use.
 

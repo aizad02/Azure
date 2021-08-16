@@ -20,6 +20,10 @@ In this lab, you will:
 
 ## Estimated timing: 20 minutes
 
+## Architecture diagram
+
+![image](../media/lab03b.png)
+
 ## Instructions
 
 ### Exercise 1
@@ -71,9 +75,6 @@ In this task, you will create an Azure disk resource by using an Azure Resource 
        "type": "String"
    },
    "sourceUri": {
-       "type": "String"
-   },
-   "sourceImageVersionId": {
        "type": "String"
    },
    "osType": {
